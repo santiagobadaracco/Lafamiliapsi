@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Seminario – La familia como objeto de intervención psi</title>
+
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family: Inter, sans-serif;
+background:
+linear-gradient(rgba(0,0,0,0.85),rgba(0,0,0,0.95)),
+url("archivo-psicologia.jpg");
+
+background-size:cover;
+background-attachment:fixed;
+color:#e5e5e5;
+line-height:1.6;
+}
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:rgba(0,0,0,0.8);
+backdrop-filter:blur(6px);
+border-bottom:1px solid #6b4f2a;
+z-index:10;
+}
+
+nav ul{
+display:flex;
+justify-content:center;
+gap:30px;
+list-style:none;
+padding:15px;
+}
+
+nav a{
+color:#d4b483;
+text-decoration:none;
+font-weight:500;
+}
+
+nav a:hover{
+color:#fff;
+}
+
+section{
+padding:90px 20px;
+max-width:1100px;
+margin:auto;
+}
+
+.hero{
+text-align:center;
+padding-top:140px;
+}
+
+.hero h1{
+font-family:"EB Garamond", serif;
+font-size:60px;
+color:#e8d3a1;
+}
+
+.hero h2{
+margin-top:10px;
+font-weight:300;
+color:#d4b483;
+}
+
+h2.section-title{
+font-family:"EB Garamond", serif;
+font-size:36px;
+color:#e8d3a1;
+margin-bottom:20px;
+}
+
+.card{
+background:rgba(0,0,0,0.6);
+border:1px solid #6b4f2a;
+padding:20px;
+border-radius:10px;
+}
+
+.faculty-card{
+background:rgba(0,0,0,0.6);
+border:1px solid #6b4f2a;
+padding:20px;
+border-radius:10px;
+}
+
+.faculty-name{
+font-family:"EB Garamond",serif;
+color:#e8d3a1;
+font-size:22px;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:20px;
+background:rgba(0,0,0,0.6);
+}
+
+th,td{
+padding:12px;
+border:1px solid #6b4f2a;
+text-align:left;
+}
+
+th{
+background:#3b2a18;
+color:#e8d3a1;
+}
+
+/* ===== MATERIALES ===== */
+
+.materiales details{
+border:1px solid #6b4f2a;
+border-radius:12px;
+padding:12px;
+margin:14px 0;
+background:rgba(0,0,0,0.6);
+}
+
+.materiales summary{
+font-weight:700;
+cursor:pointer;
+color:#e8d3a1;
+}
+
+.materiales ul{
+margin-top:10px;
+padding-left:15px;
+}
+
+.materiales li{
+margin:8px 0;
+}
+
+.materiales a{
+color:#d4b483;
+text-decoration:none;
+}
+
+.materiales a:hover{
+color:#fff;
+}
+
+/* visor PDF */
+
+.doc-viewer{
+margin-top:15px;
+border:1px solid #6b4f2a;
+border-radius:10px;
+overflow:hidden;
+background:#fff;
+}
+
+.doc-viewer__bar{
+display:flex;
+justify-content:space-between;
+padding:8px;
+background:#f3efe6;
+}
+
+#docFrame{
+width:100%;
+height:70vh;
+border:none;
+}
+
+footer{
+text-align:center;
+padding:40px;
+border-top:1px solid #6b4f2a;
+margin-top:60px;
+color:#999;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+<ul>
+<li><a href="#inicio">Inicio</a></li>
+<li><a href="#sobre">Sobre</a></li>
+<li><a href="#docente">Docente</a></li>
+<li><a href="#cronograma">Cronograma</a></li>
+<li><a href="#materiales">Materiales</a></li>
+</ul>
+</nav>
+
+<!-- HERO -->
+<section id="inicio" class="hero">
+
+<h1>Seminario</h1>
+<h2>La familia como objeto de intervención psi</h2>
+
+<p style="margin-top:10px; color:#d4b483;">
+Prof. Dra. Florencia Macchioli
+</p>
+
+</section>
+
+<!-- SOBRE -->
+<section id="sobre">
+
+<h2 class="section-title">Sobre el seminario</h2>
+
+<p>
+Este seminario propone un recorrido teórico y clínico sobre la familia como objeto de intervención en el campo psi.
+</p>
+
+<br>
+
+<p>
+Se abordarán distintos enfoques que han pensado a la familia como dispositivo, estructura y escenario de intervención.
+</p>
+
+<br>
+
+<p>
+Se trabajará sobre las transformaciones contemporáneas de los lazos familiares y sus implicancias clínicas.
+</p>
+
+</section>
+
+<!-- DOCENTE -->
+<section id="docente">
+
+<h2 class="section-title">Docente a cargo</h2>
+
+<div class="faculty-card">
+<div class="faculty-name">Florencia Adriana Macchioli</div>
+
+<p style="margin-top:10px;">
+Lic. en Psicología (UBA) y Dra. en Medicina (UBA). Especialista en Psicoterapia Familiar y clínica sistémica-relacional. Docente e investigadora UBACYT.
+</p>
+
+</div>
+
+</section>
+
+<!-- DATOS -->
+<section>
+
+<h2 class="section-title">Datos del seminario</h2>
+
+<table>
+<tr>
+<th>Día</th>
+<th>Horario</th>
+<th>Modalidad</th>
+</tr>
+
+<tr>
+<td>Martes</td>
+<td>14:30 – 16:00</td>
+<td>A confirmar</td>
+</tr>
+
+</table>
+
+</section>
+
+<!-- CRONOGRAMA -->
+<section id="cronograma">
+
+<h2 class="section-title">Cronograma</h2>
+
+<div class="card">
+<p>
+El cronograma será publicado próximamente.
+</p>
+</div>
+
+</section>
+
+<!-- MATERIALES -->
+<section id="materiales" class="materiales">
+
+<h2 class="section-title">Materiales</h2>
+
+<!-- PROGRAMAS -->
+<details open>
+<summary>Programa y calendario</summary>
+
+<ul>
+<li class="doc-item">
+<a href="#" class="open-doc" data-doc="#">Programa del seminario</a>
+</li>
+
+<li class="doc-item">
+<a href="#" class="open-doc" data-doc="#">Calendario de clases</a>
+</li>
+</ul>
+
+</details>
+
+<!-- BIBLIOGRAFIA -->
+<details>
+<summary>Bibliografía</summary>
+
+<ul>
+  <details>
+  <summary>Florencia Macchioli</summary>
+
+  <ul>
+    <li class="doc-item">
+      <a href="macchioli_generaciones_2014.pdf.pdf" target="_blank">
+        El surgimiento de tratamientos familiares en la Argentina: ambitos públicos, privados y disciplinas Psi (2014)</a>
+    
+    </li>
+
+    <li class="doc-item">
+      <a href="macchioli_inicios_ifa_argentina_2012.pdf.pdf" target="_blank">
+        Los Inicios de la Terapia Familiar en Argentina (2012)
+      </a>
+    </li>
+
+    <li class="doc-item">
+      <a href="macchioli_inclusion_padres_articulo_final.pdf.pdf" target="_blank">
+        Inclusión de los padres en el cuadro de la situación analitica
+      </a>
+    </li>
+
+    <li class="doc-item">
+      <a href="macchioli_resumen_tesis_2012.pdf.pdf" target="_blank">
+        Resumen de tesis
+      </a>
+    </li>
+
+    <li class="doc-item">
+      <a href="macchioli_2009_coterapia.doc.doc" target="_blank">
+        La coterapia en los inicios de la terapia familiar en la Argentina (1960-1979)
+      </a>
+    </li>
+
+    <li class="doc-item">
+      <a href="macchioli_2009_modelo_armar.doc.doc" target="_blank">
+        García Badaracco. Modelo para armar (2009)
+      </a>
+    </li>
+
+    <li class="doc-item">
+      <a href="macchioli_2010_mitos_ifa.doc.doc" target="_blank">
+        Mitos y olvidos de la TFA (2010)
+      </a>
+    </li>
+
+    <li class="doc-item">
+      <a href="macchioli_2010_pr_vincular.doc.doc" target="_blank">
+        PR y su ICC vincular (2010)
+      </a>
+    </li>
+
+    <li class="doc-item">
+      <a href="macchioli_2012_acta_psiquiatria.pdf.pdf" target="_blank">
+        Acta Psiquiatría (2012) - Terapia Familiar y Teoría de la Comunicación Humana en Acta Psiquiátrica y Psicológica de América Latina
+      </a>
+    </li>
+
+    <li class="doc-item">
+      <a href="macchioli_2013_comunidad_terapeutica.doc.doc" target="_blank">
+        Comunidad terapéutica, Familia y valores (2013)
+      </a>
+    </li>
+
+    <li class="doc-item">
+      <a href="macchioli_2013_epr_saberes_psi.pdf.pdf" target="_blank">
+        EPR y saberes psi en la Argentina (2013)
+      </a>
+    </li>
+
+    <li class="doc-item">
+      <a href="macchioli_2014_flia_neurosis.pdf.pdf" target="_blank">
+        Familia entre la neurosis y la comunicación (2014)
+      </a>
+    </li>
+
+    <li class="doc-item">
+      <a href="macchioli_2017_sur_frontera.pdf.pdf" target="_blank">
+        Al sur de la frontera; itinerarios de la terapia familiar entre Estados Unidos, Italia y Argentina (2017)
+      </a>
+    </li>
+
+    <li class="doc-item">
+      <a href="macchioli_teu.pdf.pdf" target="_blank"> 
+        Teoria de Enfermedad Unica - Enrique Pichón-Rivière
+      </a>
+    </li>
+  </ul>
+
+</details>
+
+</details>
+<li class="doc-item"><a href="#">Autor 2</a></li>
+<li class="doc-item"><a href="#">Autor 3</a></li>
+<li class="doc-item"><a href="#">Autor 4</a></li>
+<li class="doc-item"><a href="#">Autor 5</a></li>
+<li class="doc-item"><a href="#">Autor 6</a></li>
+<li class="doc-item"><a href="#">Autor 7</a></li>
+<li class="doc-item"><a href="#">Autor 8</a></li>
+<li class="doc-item"><a href="#">Autor 9</a></li>
+<li class="doc-item"><a href="#">Autor 10</a></li>
+<li class="doc-item"><a href="#">Autor 11</a></li>
+<li class="doc-item"><a href="#">Autor 12</a></li>
+<li class="doc-item"><a href="#">Autor 13</a></li>
+<li class="doc-item"><a href="#">Autor 14</a></li>
+<li class="doc-item"><a href="#">Autor 15</a></li>
+</ul>
+
+</details>
+
+<!-- VISOR PDF -->
+<div id="docViewer" class="doc-viewer" hidden>
+<div class="doc-viewer__bar">
+<strong id="docTitle">Documento</strong>
+<button id="closeDoc">Cerrar</button>
+</div>
+<iframe id="docFrame"></iframe>
+</div>
+
+</section>
+
+<footer>
+
+Seminario: La familia como objeto de intervención psi  
+<br>
+Prof. Dra. Florencia Macchioli — 2026
+
+</footer>
+
+<script>
+
+const viewer = document.getElementById('docViewer');
+const frame  = document.getElementById('docFrame');
+const title  = document.getElementById('docTitle');
+const close  = document.getElementById('closeDoc');
+
+document.addEventListener('click', function(e){
+
+const link = e.target.closest('.open-doc');
+if(!link) return;
+
+e.preventDefault();
+
+const url = link.getAttribute('data-doc');
+if(!url || url === '#') return;
+
+title.textContent = link.textContent;
+frame.src = url;
+
+viewer.hidden = false;
+
+});
+
+close.onclick = () => {
+viewer.hidden = true;
+frame.src = "";
+};
+
+</script>
+
+</body>
+</html>
