@@ -333,21 +333,40 @@ box-shadow:0 8px 25px rgba(0,0,0,.08);
 .materiales summary{
 
 background:#1e3a8a;
-
 color:white;
-
 padding:18px 22px;
-
 cursor:pointer;
-
 font-size:17px;
-
 font-weight:600;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
 
 list-style:none;
 
 }
 
+.materiales summary::-webkit-details-marker{
+display:none;
+}
+
+.materiales summary::after{
+
+content:"▸";
+
+font-size:22px;
+
+transition:.25s ease;
+
+color:white;
+
+}
+.materiales details[open] summary::after{
+
+transform:rotate(90deg);
+
+}
 .materiales summary::-webkit-details-marker{
 
 display:none;
