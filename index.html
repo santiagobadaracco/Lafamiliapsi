@@ -543,6 +543,147 @@ padding:22px;
 }
 
 }
+      /* ========= HERO NUEVO ========= */
+
+.hero{
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+min-height:78vh;
+
+text-align:center;
+
+}
+
+.hero-content{
+
+max-width:900px;
+
+}
+
+.hero-badge{
+
+display:inline-block;
+
+padding:8px 18px;
+
+border-radius:50px;
+
+background:rgba(255,255,255,.15);
+
+border:1px solid rgba(255,255,255,.25);
+
+color:#dbeafe;
+
+font-size:14px;
+
+letter-spacing:.5px;
+
+margin-bottom:30px;
+
+backdrop-filter:blur(8px);
+
+}
+
+.hero h1{
+
+font-size:68px;
+
+line-height:1.05;
+
+margin-bottom:24px;
+
+}
+
+.hero-subtitle{
+
+font-size:22px;
+
+color:#dbeafe;
+
+margin-bottom:10px;
+
+}
+
+.hero-profesora{
+
+font-size:18px;
+
+opacity:.9;
+
+margin-bottom:40px;
+
+}
+
+.hero-buttons{
+
+display:flex;
+
+justify-content:center;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+}
+
+.btn-primary{
+
+background:white;
+
+color:#1e3a8a;
+
+padding:15px 32px;
+
+border-radius:12px;
+
+font-weight:700;
+
+text-decoration:none;
+
+transition:.25s;
+
+}
+
+.btn-primary:hover{
+
+transform:translateY(-3px);
+
+box-shadow:0 12px 30px rgba(0,0,0,.25);
+
+}
+
+.btn-secondary{
+
+background:transparent;
+
+border:2px solid rgba(255,255,255,.5);
+
+color:white;
+
+padding:15px 32px;
+
+border-radius:12px;
+
+text-decoration:none;
+
+font-weight:700;
+
+transition:.25s;
+
+}
+
+.btn-secondary:hover{
+
+background:white;
+
+color:#1e3a8a;
+
+}
 </style>
 
 </head>
@@ -576,18 +717,41 @@ comunicarse con Santi al <strong>1126473370</strong>.
 </ul>
 </nav>
 
-<!-- HERO -->
+ <!-- HERO -->
 <section id="inicio" class="hero">
 
-<h1>Seminario</h1>
-<h2>La familia como objeto de intervención psi</h2>
+<div class="hero-content">
 
-<p style="margin-top:10px; color:#d4b483;">
+<span class="hero-badge">
+Facultad de Psicología · Universidad de Buenos Aires
+</span>
+
+<h1>La familia como<br>objeto de intervención psi</h1>
+
+<p class="hero-subtitle">
+Seminario de grado · Primer Cuatrimestre 2026
+</p>
+
+<p class="hero-profesora">
 Prof. Dra. Florencia Macchioli
 </p>
 
-</section>
+<div class="hero-buttons">
 
+<a href="#materiales" class="btn-primary">
+📚 Ver materiales
+</a>
+
+<a href="#cronograma" class="btn-secondary">
+📅 Cronograma
+</a>
+
+</div>
+
+</div>
+
+</section>
+      
 <!-- SOBRE -->
 <section id="sobre">
 
